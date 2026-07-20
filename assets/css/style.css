@@ -587,12 +587,14 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.portfolio {
   margin-bottom: 30px;
-  border: 5px solid #0563bb;
-  border-radius: 5px;
-}
 
+}
+.portfolio-item{
+  border: 0;
+  border-radius: 0;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -660,6 +662,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 4px solid;
+  border-radius: 5px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
@@ -956,3 +960,11 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/*-------------------------Customized styles added late---------------------------*/
+.aligned-wrap {
+    text-align: justify;      /* Aligns text flush with both margins */
+    width: 100%;             /* Defines the boundaries for wrapping */
+    word-break: break-word;   /* Prevents long words from breaking layout */
+    hyphens: auto;           /* Optional: Adds hyphens to split long words */
+  }
